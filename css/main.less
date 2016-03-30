@@ -3,10 +3,34 @@ body {
   font-family:  "Montserrat", "Helvetica Neue",Helvetica,Arial,sans-serif;
 
   .header {
-    .navbar-inverse .navbar-header {
+    .navbar.navbar-inverse.navbar-fixed-top {
       background: @color-accent;
     }
 
+    .navbar-inverse .navbar-brand {
+      color: @color-main;
+    }
+
+    .header_phone {
+      display: inline-block;
+      color: #563d7c;
+      padding-top: 15px;
+    }
+
+    .navbar-inverse .navbar-brand:hover,
+    .navbar-inverse .navbar-brand:focus {
+      color: @color-accent;
+      background-color: transparent;
+    }
+
+    .navbar-inverse .navbar-nav>li>a {
+      color: #563d7c;
+    }
+
+    .navbar-inverse .navbar-nav>li>a:hover,
+    .navbar-inverse .navbar-nav>.active>a{
+      background: #f9f9f9;
+    }
   }
   
   .main {
