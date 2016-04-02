@@ -1,6 +1,11 @@
+@font-face {
+  font-family: Rouble; /* Гарнитура шрифта */
+  src: url("../font/rouble.ttf"); /* Путь к файлу со шрифтом */
+}
+
 body {
   color: @color-text;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   .main {
     text-align: center;
@@ -113,6 +118,10 @@ body {
         margin: 0;
         line-height: 40px;
         padding: 20px 0;
+
+        span {
+          font-family: Rouble;
+        }
       }
 
       .price_services_description {
