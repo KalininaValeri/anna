@@ -14,12 +14,20 @@ body {
     color: @color-accent;
     background: url("../img/main_img.png") 0 0 no-repeat;
     background-size: cover;
-    display: table;
 
-    .main_content {
-      display: table-cell;
-      vertical-align: middle;
+    .main_table {
+      display: table;
       text-transform: uppercase;
+      height: 100%;
+      width: 100%;
+
+      .main_table_cell {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+      }
 
       h1 {
         font-weight: 500;
