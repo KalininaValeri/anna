@@ -4,6 +4,12 @@ $(function () {
   body.append('<style>section .height{height:' + $( window ).height() + 'px!important;}</style>');
 
   $.stellar();
+
+  $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 200
+  });
 });
 
 $( "#toggle" ).click(function() {
@@ -14,5 +20,3 @@ $( "#toggle" ).click(function() {
     text.slideDown("slow").addClass('active');
   }
 });
-
-//$(window).height();
