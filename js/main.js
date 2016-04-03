@@ -3,10 +3,7 @@ $(function () {
   // the height of the screen
   body.append('<style>section .height{height:' + $( window ).height() + 'px!important;}</style>');
 
-  $('#home').stellar({
-    horizontalScrolling: false,
-    responsive: true
-  });
+  $.stellar();
 });
 
 $( "#toggle" ).click(function() {
