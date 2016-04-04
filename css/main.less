@@ -7,6 +7,21 @@ body {
   color: @color-text;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+  .table {
+    display: table;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+
+    .table_cell {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
   .main {
     text-align: center;
     width: 100%;
@@ -15,19 +30,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 
-    .main_table {
-      display: table;
-      text-transform: uppercase;
-      height: 100%;
-      width: 100%;
 
-      .main_table_cell {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        height: 100%;
-        width: 100%;
-      }
 
       h1 {
         font-weight: 500;
@@ -41,7 +44,7 @@ body {
         letter-spacing: 2px;
         margin: 0;
       }
-    }
+
   }
 
   .about {
@@ -194,7 +197,11 @@ body {
   }
   
   .contacts {
-    background: url("../img/cont_img.png");
+    background: url("../img/cont_img.png") 50%;
     background-attachment: fixed;
+
+    .contacts_content {
+      background: rgba(240, 240, 240, 0.8);
+    }
   }
 }
