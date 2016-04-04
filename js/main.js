@@ -25,7 +25,7 @@ $( "#toggle" ).click(function() {
 
   // Create a map object and specify the DOM element for display.
   function initMap() {
-    var myLatLng = {lat: -34.397, lng: 150.644};
+    var myLatLng = {lat: 43.439560, lng: 39.931184};
 
     // Specify features and elements to define styles.
     var styleArray = [
@@ -56,7 +56,7 @@ $( "#toggle" ).click(function() {
       scrollwheel: false,
       // Apply the map style array to the map.
       styles: styleArray,
-      zoom: 8
+      zoom: 13
     });
 
     var marker = new google.maps.Marker({

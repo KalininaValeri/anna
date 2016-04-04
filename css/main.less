@@ -16,7 +16,7 @@ body {
     .table_cell {
       display: table-cell;
       vertical-align: middle;
-      text-align: center;
+      /*text-align: center;*/
       height: 100%;
       width: 100%;
     }
@@ -200,13 +200,25 @@ body {
   .contacts {
     background: url("../img/cont_img.png") 50%;
     background-attachment: fixed;
+    background-size: cover;
+    text-align: left;
+    padding: 68px 0 104px;
+
+    .col-md-10,
+    .col-md-7 {
+      padding: 0;
+    }
+
+    .col-md-5 {
+      padding: 70px 50px;
+    }
 
     .contacts_content {
       background: rgba(255, 255, 255, 0.7);
     }
 
     .map {
-      height: 100px;
+      height: 75vh;
     }
   }
 }
