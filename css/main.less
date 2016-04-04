@@ -225,8 +225,9 @@ body {
   .footer {
     background: #302540;
     text-transform: uppercase;
+    padding: 30px 0;
 
-    .footer_name,
+    .footer_name a,
     .footer_social a{
       font-size: 10px;
       letter-spacing: 1px;
@@ -234,12 +235,15 @@ body {
       color: @color-accent;
     }
 
+    .footer_name a:hover,
+    .footer_social a:hover {
+      text-decoration: none;
+    }
+
     .footer_social {
       text-align: right;
 
-      a:hover {
-        text-decoration: none;
-      }
+
     }
   }
 }
