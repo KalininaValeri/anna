@@ -53,7 +53,8 @@ $( "#toggle" ).click(function() {
     // Create a map object and specify the DOM element for display.
     var map = new google.maps.Map(document.getElementById('map'), {
       center: myLatLng,
-      scrollwheel: false,
+      draggable: false,
+      scrollwheel: true,
       // Apply the map style array to the map.
       styles: styleArray,
       zoom: 13
