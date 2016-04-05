@@ -22,6 +22,41 @@ body {
     }
   }
 
+  .header {
+    .navbar.navbar-inverse.navbar-fixed-top { //bootstrap
+      background: @color-accent;
+    }
+
+    .navbar-inverse .navbar-toggle { //bootstrap
+      background: #563d7c;
+    }
+
+    .navbar-inverse .navbar-brand { //bootstrap
+      color: @color-main;
+    }
+
+    .header_phone {
+      display: inline-block;
+      color: #563d7c;
+      padding-top: 15px;
+    }
+
+    .navbar-inverse .navbar-brand:hover,
+    .navbar-inverse .navbar-brand:focus { //bootstrap
+      color: @color-accent;
+      background-color: transparent;
+    }
+
+    .navbar-inverse .navbar-nav>li>a { //bootstrap
+      color: #563d7c;
+    }
+
+    .navbar-inverse .navbar-nav>li>a:hover, //bootstrap
+    .navbar-inverse .navbar-nav>.active>a{
+      background: #f9f9f9;
+    }
+  }
+
   .main {
     text-align: center;
     width: 100%;
