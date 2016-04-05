@@ -1,7 +1,7 @@
 $(function () {
   var body = $('body');
   // the height of the screen
-  body.append('<style>section .height{height:' + $( window ).height() + 'px!important;}</style>');
+  body.append('<style>section .height{height:' + $( window ).height() + 'px;}</style>');
 
   $.stellar();
 
