@@ -3,9 +3,36 @@
   src: url("../font/rouble.ttf"); /* ֿףעü ך פאיכף סמ רנטפעמל */
 }
 
+@font-face {
+  font-family: DIN;
+  src: url("../font/9116.otf");
+}
+
+@font-face {
+  font-family: droid;
+  src: url("../font/droid-sans_%5Ballfont.ru%5D.ttf");
+}
+/*@font-face {
+  font-family: OswaldREG;
+  src: url("../font/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: Oswald;
+  src: ('../font/');
+  //font-weight: 300;
+  font-style: normal;
+}*/
+
 body {
   color: @color-text;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  h1,
+  h3,
+  h4 {
+    font-family: droid;
+  }
 
   .table {
     margin: 0;
@@ -23,6 +50,7 @@ body {
   }
 
   .header {
+
     .navbar.navbar-inverse.navbar-fixed-top { //bootstrap
       background: @color-accent;
       border: 0;
@@ -71,8 +99,9 @@ body {
 
 
       h1 {
+        font-family: droid;
         font-weight: 500;
-        font-size: 56px;
+        font-size: 60px;
         letter-spacing: 3px;
         margin: 10px;
         text-transform: uppercase;
@@ -161,6 +190,7 @@ body {
       h4 {
         text-transform: uppercase;
         font-size: 14px;
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
 
       .price_services_cost {
