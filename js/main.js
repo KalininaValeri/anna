@@ -5,13 +5,14 @@ $(function () {
 
   $.stellar();
 
-  initMap();
+  /*initMap();*/
 
   $('.grid').masonry({
     // options
     itemSelector: '.grid-item',
     //columnWidth: 200
   });
+
 });
 
 $( "#toggle" ).click(function() {
@@ -23,6 +24,7 @@ $( "#toggle" ).click(function() {
   }
 });
 
+/*
   // Create a map object and specify the DOM element for display.
   function initMap() {
     var myLatLng = {lat: 43.439560, lng: 39.931184};
@@ -65,4 +67,4 @@ $( "#toggle" ).click(function() {
       position: myLatLng,
       title: 'Hello World!'
     });
-  }
+  }*/
