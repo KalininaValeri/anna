@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Rouble; /* Гарнитура шрифта */
-  src: url("../font/rouble.ttf"); /* Путь к файлу со шрифтом */
+  font-family: Rouble; /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ */
+  src: url("../font/rouble.ttf"); /* пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 }
 
 @font-face {
@@ -269,25 +269,43 @@ body {
     background: url("../img/cont_img.png");
     background-attachment: fixed;
     //background-size: cover;
-    text-align: left;
-    padding: 104px 0;
+    text-align: center;
+    padding: 200px 0;
 
-    .col-md-10,
-    .col-md-7 {
-      padding: 0;
-    }
-
-    .col-md-5 {
-      padding: 70px 50px;
-    }
-
-    .contacts_content {
+     .contacts_content {
       background: rgba(255, 255, 255, 0.7);
+       padding: 40px 0;
+
+       h3 {
+         font-size: 24px;
+         text-transform: uppercase;
+       }
+
+       .contacts_descr {
+         font-size: 20px;
+         margin-bottom: 30px;
+       }
+
+       .contacts_title_social {
+         margin: 0;
+         font-weight: 700;
+       }
+
+       .contacts_social a{
+         font-size: 10px;
+         letter-spacing: 1px;
+         font-weight: 700;
+         color: @color-text;
+         text-transform: uppercase;
+       }
+
+       .contacts_social a:hover {
+         text-decoration: none;
+       }
+
+
     }
 
-    .map {
-      height: 75vh;
-    }
   }
 
   .footer {
@@ -297,7 +315,7 @@ body {
 
     .footer_name a,
     .footer_social a{
-      font-size: 10px;
+      font-size: 14px;
       letter-spacing: 1px;
       font-weight: 700;
       color: @color-accent;
