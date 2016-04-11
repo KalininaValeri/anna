@@ -174,7 +174,7 @@ body {
   }
 
   .price {
-    background: @color-main;
+    background: #3e3350;
     color: @color-accent;
     padding: 68px 0 104px;
     text-align: center;
@@ -208,7 +208,7 @@ body {
         color: #81798f;
         border-top: 1px solid #81798f;
         padding: 25px 0;
-        text-align: justify;
+       /* text-align: justify;*/
       }
 
       button {
@@ -266,15 +266,19 @@ body {
   }
   
   .contacts {
-    background: url("../img/cont_img.png");
+    //background: url("../img/cont_img.png");
+    background: #3e3350;
     background-attachment: fixed;
     //background-size: cover;
     text-align: center;
-    padding: 200px 0;
+    padding: 30px 0;
 
      .contacts_content {
-      background: rgba(255, 255, 255, 0.7);
-       padding: 40px 0;
+       color: @color-accent;
+
+       .container_content_name {
+         font-size: 30px;
+       }
 
        h3 {
          font-size: 24px;
@@ -295,7 +299,7 @@ body {
          font-size: 10px;
          letter-spacing: 1px;
          font-weight: 700;
-         color: @color-text;
+         color: @color-accent;
          text-transform: uppercase;
        }
 
@@ -309,19 +313,23 @@ body {
   }
 
   .footer {
-    background: #302540;
-    text-transform: uppercase;
+    background: #251a36;
+    //text-transform: uppercase;
     padding: 30px 0;
+    color: @color-accent;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: right;
 
-    .footer_name a,
+    /*.footer_name a,
     .footer_social a{
       font-size: 14px;
       letter-spacing: 1px;
       font-weight: 700;
       color: @color-accent;
-    }
+    }*/
 
-    .footer_name a:hover,
+   /* .footer_name a:hover,
     .footer_social a:hover {
       text-decoration: none;
     }
@@ -330,7 +338,7 @@ body {
       text-align: right;
 
 
-    }
+    }*/
   }
 
 
