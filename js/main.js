@@ -5,6 +5,15 @@ $(function () {
 
   $.stellar();
 
+  /*$('#mycontainer').mosaicflow({
+    itemSelector: '.item',
+    minItemWidth: 300
+  });
+*/
+  jQuery(window).load(function(){
+    jQuery('.masonry').masonry({ columnWidth:200, itemSelector:'.box, .item' });
+  });
+
   /*initMap();*/
 
  /* $('.grid').masonry({
