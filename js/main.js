@@ -7,11 +7,11 @@ $(function () {
 
   /*initMap();*/
 
-  $('.grid').masonry({
+ /* $('.grid').masonry({
     // options
     itemSelector: '.grid-item',
     //columnWidth: 200
-  });
+  });*/
 
 });
 
