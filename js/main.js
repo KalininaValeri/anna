@@ -5,22 +5,15 @@ $(function () {
 
   $.stellar();
 
-  /*$('#mycontainer').mosaicflow({
-    itemSelector: '.item',
-    minItemWidth: 300
-  });
-*/
-  jQuery(window).load(function(){
-    jQuery('.masonry').masonry({ columnWidth:200, itemSelector:'.box, .item' });
-  });
+  var container = $('#grid');
 
-  /*initMap();*/
-
- /* $('.grid').masonry({
-    // options
-    itemSelector: '.grid-item',
-    //columnWidth: 200
-  });*/
+  container.imagesLoaded(function () {
+    container.masonry({
+      itemSelector: '.grid-item',
+      columWidth: '.grid-sizer',
+      percentPosition: true
+    })
+  });
 
 });
 
